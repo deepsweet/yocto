@@ -44,10 +44,7 @@
 
         // elements list
         if(isList(selector)) {
-            this.push.apply(
-                this,
-                this.slice.call(normalizeList(selector))
-            );
+            this.push.apply(this, normalizeList(selector));
         }
 
     }
