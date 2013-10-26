@@ -75,7 +75,7 @@
                     // if prop is function or
                     // prop is not function and there is an argument
                     if(
-                       (result !== prop) ||
+                       (result && result !== prop) ||
                        (!prop.call && arg === undefined)
                     ) {
                         // is Element
