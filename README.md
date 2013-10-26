@@ -1,4 +1,4 @@
-## yocto
+## yocto [![Build Status](https://secure.travis-ci.org/deepsweet/yocto.png)](https://travis-ci.org/deepsweet/yocto)
 
 yocto is fun, small (min.js ≈1K and min.js.gz ≈ 600B), demonstrative and experimental library which allows you to chain all the default DOM Element methods and properties like this:
 
