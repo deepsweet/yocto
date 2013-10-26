@@ -1,0 +1,36 @@
+{
+  "name": "yocto",
+  "version": "0.1.0",
+  "description": "...",
+  "author": {
+    "name": "Kir Belevich",
+    "email": "kir@soulshine.in",
+    "url": "https://github.com/deepsweet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deepsweet/yocto.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/deepsweet/yocto/issues"
+  },
+  "devDependencies": {
+    "mocha": "",
+    "mocha-phantomjs": "",
+    "phantomjs": "",
+    "uglify-js": "",
+    "eslint": "",
+    "jscs": ""
+  },
+  "scripts": {
+    "mocha": "mocha-phantomjs test/test.html",
+    "jscs": "jscs src/yocto.js",
+    "eslint": "eslint -c .eslint.json src/yocto.js",
+    "min": "uglifyjs src/yocto.js -c -m -o src/yocto.min.js && ls -la src/",
+    "test": "npm run-script mocha && npm run-script jscs && npm run-script eslint"
+  },
+  "license": {
+    "type": "WFTPL",
+    "url": "https://github.com/deepsweet/yocto/blob/master/LICENSE"
+  }
+}
