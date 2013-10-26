@@ -19,14 +19,14 @@
 
         // no selector – no results
         if(!selector) {
-            return this;
+            return;
         }
 
         // single element
         if(selector.nodeType === 1) {
             this[0] = selector;
             this.length = 1;
-            return this;
+            return;
         }
 
         // string
@@ -62,7 +62,7 @@
                     prop,
                     result;
 
-                for(i = 0; i < this.length; i++) {
+                for(; i < this.length; i++) {
                     elem = this[i];
                     prop = elem[k];
                     // if prop is function and there are args – apply it
