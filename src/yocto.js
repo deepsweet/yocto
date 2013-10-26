@@ -2,8 +2,7 @@
 
     'use strict';
 
-    var arrayProto = Array.prototype,
-        regCreateElement = /^<(.+?)\/?>$/;
+    var regCreateElement = /^<(.+?)\/?>$/;
 
     /**
      * Create a new Yocto.
@@ -45,9 +44,9 @@
 
         // elements list
         if(isList(selector)) {
-            return arrayProto.push.apply(
+            this.push.apply(
                 this,
-                arrayProto.slice.call(normalizeList(selector))
+                this.slice.call(normalizeList(selector))
             );
         }
 
