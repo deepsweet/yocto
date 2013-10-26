@@ -34,6 +34,10 @@ $$$('body') instanceof Array
 * wrap single element with `$$$(document.body)`
 * wrap elements collectons like `NodeList` and any other Array-Like objects with `$$$(document.body.childNodes)`
 
+### cross-browser normalization
+
+fuck it.
+
 ### test & lint
 
 * all: `npm test`
