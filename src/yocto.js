@@ -130,7 +130,7 @@
             i = 0,
             item;
 
-        for(i = 0; i < list.length; i++) {
+        for(; i < list.length; i++) {
             item = list[i];
 
             if(item.nodeType === 1 && !~out.indexOf(item)) {
