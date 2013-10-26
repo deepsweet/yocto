@@ -1,6 +1,6 @@
 ## yocto [![Build Status](https://secure.travis-ci.org/deepsweet/yocto.png)](https://travis-ci.org/deepsweet/yocto)
 
-yocto is fun, small (min.js ≈1K and min.js.gz ≈ 600B), demonstrative and experimental library which allows you to chain all the default DOM Element methods and properties like this:
+yocto is fun, small (min.js ≈1K and min.js.gz ≈ 600B) and experimental library which allows you to chain all the default DOM Element methods and properties like this:
 
 ```javascript
 $$$('div')
@@ -14,16 +14,16 @@ $$$('div')
             .innerHTML()
 ```
 
-that's `137` items in the latest Google Chrome, for example.
+that's 137 items in the latest Google Chrome, for example.
 
 ### additional features
 
 `$$$` can:
 
 * handle all the same selectors as `querySelectorAll`
-* create elements with `$$$('<div/>')`
-* wrap elements with `$$$(document.body)`
-* wrap elements collectons like `NodeList` and any other Array-Like object with `$$$(document.body.childNodes)`
+* create element with `$$$('<div/>')`
+* wrap single element with `$$$(document.body)`
+* wrap elements collectons like `NodeList` and any other Array-Like objects with `$$$(document.body.childNodes)`
 
 ### test
 
