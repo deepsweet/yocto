@@ -25,7 +25,7 @@ that's 137 items in the latest Google Chrome, for example.
 * wrap single element with `$$$(document.body)`
 * wrap elements collectons like `NodeList` and any other Array-Like objects with `$$$(document.body.childNodes)`
 
-### test
+### test & code style
 
 * all: `npm test`
 * unit (still in progress): open `test/test.html` in your browser or run `npm run-script unit` for [testing with PhantomJS](https://github.com/metaskills/mocha-phantomjs)
